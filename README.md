@@ -45,9 +45,9 @@ rustler::init!("Elixir.Math", [add]);
 
 #### Supported OTP and Elixir Versions
 
-Rustler aims to support the newest three OTP versions as well as Elixir versions capable of running the supported versions of OTP.
+Rustler aims to support the newest three major OTP versions as well as newest three minor Elixir versions.
 
-#### Supported nif_version
+#### Supported NIF version
 
 Rustler uses `erlang:system_info(nif_version)` to detect the supported NIF version of the Erlang/OTP
 system for which the NIF is to be compiled. It is possible to restrict the NIF version to an older

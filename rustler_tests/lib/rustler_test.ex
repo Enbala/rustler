@@ -23,6 +23,8 @@ defmodule RustlerTest do
   def term_debug(_), do: err()
   def term_eq(_, _), do: err()
   def term_cmp(_, _), do: err()
+  def term_internal_hash(_, _), do: err()
+  def term_phash2_hash(_), do: err()
 
   def sum_map_values(_), do: err()
   def map_entries_sorted(_), do: err()
@@ -39,6 +41,7 @@ defmodule RustlerTest do
   def parse_integer(_), do: err()
   def binary_new(), do: err()
   def owned_binary_new(), do: err()
+  def new_binary_new(), do: err()
   def unowned_to_owned(_), do: err()
   def realloc_shrink(), do: err()
   def realloc_grow(), do: err()

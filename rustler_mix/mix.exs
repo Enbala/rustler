@@ -2,14 +2,14 @@ defmodule Rustler.Mixfile do
   use Mix.Project
 
   @source_url "https://github.com/rusterlium/rustler"
-  @version "0.22.2"
+  @version "0.23.0"
 
   def project do
     [
       app: :rustler,
       name: "Rustler",
       version: @version,
-      elixir: "~> 1.6",
+      elixir: "~> 1.11",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -26,7 +26,7 @@ defmodule Rustler.Mixfile do
     [
       {:toml, "~> 0.6", runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:jason, "~> 1.2", runtime: false}
+      {:jason, "~> 1.0", runtime: false}
     ]
   end
 

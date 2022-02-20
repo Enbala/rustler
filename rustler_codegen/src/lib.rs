@@ -1,14 +1,6 @@
 #![recursion_limit = "128"]
 
-extern crate proc_macro;
 use proc_macro::TokenStream;
-
-extern crate heck;
-extern crate proc_macro2;
-extern crate syn;
-
-#[macro_use]
-extern crate quote;
 
 mod context;
 mod ex_struct;
@@ -28,7 +20,7 @@ enum RustlerAttr {
     Tag(String),
 }
 
-/// Implementation of a Native Implementated Function (NIF) macro that lets the user annotate
+/// Implementation of a Native Implemented Function (NIF) macro that lets the user annotate
 /// a function that will be wrapped in higer-level NIF implementation.
 ///
 /// ```ignore
@@ -61,7 +53,7 @@ pub fn init(input: TokenStream) -> TokenStream {
     output.into()
 }
 
-/// Implementation of a Native Implementated Function (NIF) macro that lets the user annotate
+/// Implementation of a Native Implemented Function (NIF) macro that lets the user annotate
 /// a function that will be wrapped in higer-level NIF implementation.
 ///
 /// ```ignore
